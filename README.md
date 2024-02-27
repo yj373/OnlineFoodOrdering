@@ -7,4 +7,8 @@ This is a full-stack project about developing an online food ordering system bas
 - Checkout
 
 ## Design
-![image info](./Diagram.png)
+![Design diagram](./Diagram.png)
+Overall, the app consists of three layers: the controller layer, the service layer and the repository layer. 
+- Controller layer: it is designed to handle all the incoming HTTP requests, calling the corresponging downstream service APIs based on the requests.
+- Service layer: it implements all the service logics, for example, the signing up of a new user.
+- Repository layer: it takes care of the manipulation of the data based on a PostgreSQL database.
